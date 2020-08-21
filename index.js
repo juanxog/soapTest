@@ -1,7 +1,11 @@
 var soap = require("soap");
 var url = "http://example.com/wsdl?wsdl";
-var args = { name: "value" };
 var request = require("request");
+
+
+var args = { name: "value" };
+var config = { username: "hola", password: "password"}
+
 
 var specialRequest = request.defaults({
   agentOptions: {
